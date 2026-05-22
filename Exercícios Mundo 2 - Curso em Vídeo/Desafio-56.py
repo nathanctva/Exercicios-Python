@@ -1,5 +1,3 @@
-# ATIVIDADE EM PROCESSO DE DESENVOLVIMENTO
-
 import sys
 
 pessoas = {}
@@ -11,9 +9,9 @@ print('\033[33mPrograma de Lista de Pessoas\033[m\n')
 for pessoa in range(1, 5):
    
     while True:
-        nome = input(('Digite seu Nome: ').strip())
+        nome = input(('Digite seu Nome: '))
 
-        if nome.replace(' ', '').isalpha():
+        if nome.strip().replace(' ', '').isalpha():
             break
         else:
             print('\nValor Inválido\n')
